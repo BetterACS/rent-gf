@@ -17,7 +17,6 @@ create table Friendtal(
     location_id int,
 	Name varchar(255) not null,
 	age int(100) not null,
-	blood_type varchar(2),
 	personality varchar(255),
 	gender varchar(255),
 	bust float ,
