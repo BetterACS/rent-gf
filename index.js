@@ -15,6 +15,8 @@ const Fee_terms = require('./path/fee&terms');
 const review = require('./path/review');
 const HowToUse = require('./path/HowToUse');
 const sessionMiddleware = require('./path/cookie');
+const report = require('./path/report');
+const logout = require('./path/logoutroute');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -43,6 +45,8 @@ app.use('/' , FriendtalProfile);
 app.use('/' , Fee_terms);
 app.use('/' , review);
 app.use('/' , HowToUse);
+app.use('/' , report);
+app.use('/' , logout);
 
 // Start the server
 app.listen(PORT, () => {

@@ -9,11 +9,8 @@ create table User(
 	tel int not null ,
 	gender varchar(10) ,
 	age int,
-                picture longblob
 );
 
-select * from Fee_terms;
-insert into Fee_terms(terms , price) value ('plan A(amusement park)',4200),('plan B(aquarium)',5500),('plan C(activity)',5000 );
 
 
 create table Location(
@@ -58,13 +55,15 @@ create table Summary(
 insert into User(email ,username , passwords , tel ,gender ,age)
 values ('monshun@gmail.com' , 'Jaijai' ,'jai12345' ,0894285541 ,'Male' ,20);
 
-update Friendtal 
-set picture = 'https://i.imgur.com/zB4hvHf.jpg'
-where friendtal_ID = 3;
+
 
 insert into Friendtal(location_id,Name,age,blood_type,personality,gender,bust,waist,hip,height,weight,picture)
 values 
 	(24, 'อ้วน' , 20 , '','เท่ อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg')
                 ;
 
-select * from Friendtal;
+select * from User;
+
+UPDATE User
+SET gender = 'Male'
+WHERE user_id = 7;
