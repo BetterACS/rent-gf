@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/signup_loginstyle.css">
+    <script defer src="./js/signup.js"></script>
+</head>
+<body>
+    <div class="signup">
+        <h1 class="head">FRIENDTAL</h1>
+        <form class="suginup-form" name="register" >
+             <label>Email</label>
+            <input name="email" type="email" placeholder="">
+            <label>Username</label>
+            <input name="username" type="text" placeholder="">
+            <label>Tel.</label>
+            <input name="tel" type="tel" placeholder="">
+            <label>Age</label>
+            <input name="age" type="text" placeholder="">
+            <div class="gender_">
+                <label>Gender</label>
+                <div>
+                    <input name="gender" type="radio" value="Male">
+                    <label class="gtab">Male</label>
+                    <input name="gender" type="radio" value="Female">
+                    <label class="gtab">Female</label>
+                    <div>
+                        <input name="gender" type="radio"  value="LGBTQIA+">
+                        <label class="gtab">LGBTQIA+</label>
+                        <input name="gender" type="radio"   value="Secret ">
+                        <label class="gtab">Secret</label>
+                    </div>
+                </div>
+            </div>
+            <label>Password</label>
+            <input name="password" type="password" placeholder="">
+            <button>Sign up</button>
+        </form>
+    </div>
+    <p class="para-2">Already have an account? <a href="" id="loginLink">Login here</a></p>
+</body>
+</html>
