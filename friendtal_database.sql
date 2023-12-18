@@ -8,7 +8,7 @@ create table User(
 	passwords varchar(255) not null,
 	tel int not null ,
 	gender varchar(10) ,
-	age int,
+	age int
 );
 
 
@@ -32,13 +32,13 @@ create table Friendtal(
 	age int(100) not null,
 	blood_type varchar(2),
 	personality varchar(255),
-	gender varchar(255),
-	bust float ,
-	waist float ,
-	hip float ,
+	gender varchar(10),
+	bust varchar(3) ,
+	waist varchar(3) ,
+	hip varchar(3) ,
 	height float not null,
 	weight float not null,
-	picture longblob not null,
+	picture varchar(255),
 	foreign key (location_id) references Location(location_id)
 );
 
@@ -63,7 +63,8 @@ values
                 ;
 
 select * from User;
+drop table User;
 
-UPDATE User
-SET gender = 'Male'
-WHERE user_id = 7;
+UPDATE Friendtal
+SET blood_type = 'O'
+WHERE friendtal_ID = 1;

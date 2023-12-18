@@ -23,13 +23,6 @@ dbConnection.connect((err) => {
     }
 });
 
-const query = 'SELECT * FROM User';
-dbConnection.query(query, (err, results) => {
-    if (err) {
-        console.error(err);
-    }
-    console.log(results);
-});
 
 module.exports = dbConnection;
 

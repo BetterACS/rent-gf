@@ -1,6 +1,7 @@
 // index.js
 const express = require('express');
 const bodyParser = require('body-parser');
+
 const loginRoute = require('./path/loginroute');
 const RegisterRoute = require('./path/registeroute');
 const homepageroute = require('./path/homepageroute');
@@ -18,6 +19,7 @@ const sessionMiddleware = require('./path/cookie');
 const report = require('./path/report');
 const logout = require('./path/logoutroute');
 const dotenv = require('dotenv');
+const deleteuser = require('./path/deleteUserRoute');
 dotenv.config();
 
 const app = express();
@@ -25,6 +27,7 @@ const PORT = 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.json()); 
 app.use(sessionMiddleware);
 
 
@@ -47,6 +50,7 @@ app.use('/' , review);
 app.use('/' , HowToUse);
 app.use('/' , report);
 app.use('/' , logout);
+app.use('/' , deleteuser);
 
 // Start the server
 app.listen(PORT, () => {

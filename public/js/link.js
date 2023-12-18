@@ -57,6 +57,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+    var  Cancel= document.getElementById('Cancel');
+
+    Cancel.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.location.href = 'http://localhost:3000/profile';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
     var  plink= document.getElementById('plink');
 
     plink.addEventListener('click', function (event) {
