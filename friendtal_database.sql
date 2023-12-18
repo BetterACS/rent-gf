@@ -6,9 +6,9 @@ create table User(
 	email varchar(255) unique not null ,
 	username varchar(255) unique not null ,
 	passwords varchar(255) not null,
-	tel int not null ,
+	tel varchar(10) not null ,
 	gender varchar(10) ,
-	age int
+	age int(3)
 );
 
 
@@ -36,8 +36,8 @@ create table Friendtal(
 	bust varchar(3) ,
 	waist varchar(3) ,
 	hip varchar(3) ,
-	height float not null,
-	weight float not null,
+	height int(3) not null,
+	weight int(3) not null,
 	picture varchar(255),
 	foreign key (location_id) references Location(location_id)
 );
@@ -62,9 +62,3 @@ values
 	(24, 'อ้วน' , 20 , '','เท่ อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg')
                 ;
 
-select * from User;
-drop table User;
-
-UPDATE Friendtal
-SET blood_type = 'O'
-WHERE friendtal_ID = 1;
