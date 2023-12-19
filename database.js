@@ -5,13 +5,13 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 dotenv.config();
 
-const dbConnection = mysql.createConnection({   
-    host: process.env.HOST ,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
-    port: process.env.DBPORT,
-})
+const dbConnection = mysql.createConnection({
+    host: '127.0.0.1',
+    user: 'root',
+    password: 'css222',
+    database: 'friendtal_database',
+    port: '3306'
+});
 
 mongoose.connect('mongodb+srv://pana:root@cluster0.d0ziwse.mongodb.net/')
     .then(() => console.log('Connected to MongoDB'))
@@ -25,6 +25,4 @@ dbConnection.connect((err) => {
     }
 });
 
-
 module.exports = dbConnection;
-

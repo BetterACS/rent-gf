@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,64 +122,74 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <iframe class="position-relative rounded w-100 h-100"
-                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248057.20375286211!2d100.46829972868882!3d13.724878468884306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2z4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4Lij!5e0!3m2!1sth!2sth!4v1702644533523!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                        frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
-                            tabindex="0"></iframe>
+   
                     </div>
+                    <div style="padding-left: 440px;">
                     <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
                             <p class="mb-4"tact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Reservation</a>.</p>
-                            <form>
+                            <form name="reservation">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" class="form-control" id="username" placeholder="Your Name">
                                             <label for="name">User_name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <input type="email" class="form-control" id="friendtal" placeholder="friendtal">
                                             <label for="email">Friendtal</label>
                                         </div>
                                     </div>
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                                <input type="text" class="form-control" name="date" placeholder="date">
                                                 <label for="name">Date</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-floating">
-                                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                                <input type="email" class="form-control" name="email" placeholder="Your Email">
                                                 <label for="email">Your Email</label>
                                             </div>
                                         </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Plan</label> 
+                                        
+                                  <div class="row g-2" style="padding-left: 10px; background-color:w">
+                                    <div class="col-md-12">
+                                        <div class="row g-2">
+                                                <select class="form-control" >
+                        
+                                                    <option value="1">2 hr.</option>
+                                                    <option value="2">3 hr.</option>
+                                                    <option value="3">4 hr.</option> 
+                                                    <option value="4">5 hr.</option>
+                                                    <option value="6">plan A(amusement park).</option>
+                                                    <option value="7">plan B(aquarium)</option> 
+                                                    <option value="8">plan C(activity)</option>
+                                                  
+                                                </select>
                                         </div>
+                                        </div>
+                                    </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="text" class="form-control" name="payment" placeholder="Subject">
                                             <label for="subject">Payment</label>
                                         </div>
                                         </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <textarea class="form-control" placeholder="Leave a message here" name="detail" style="height: 150px"></textarea>
                                             <label for="message">Detail</label>
                                         </div>
                                         </div>
                                         <div>
                                             <a href="" id="cflink">
                                                 <div class="col-12">
-                                                    <button class="btn btn-primary w-100 py-3" type="submit">Send</button>
+                                                    <button class="btn btn-primary w-100 py-3" type="submit",id="submit">Send</button>
                                                 </div>
                                             </a>
                                         </div>
