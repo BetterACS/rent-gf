@@ -125,53 +125,52 @@
                     <div style="padding-left: 440px;">
                         <div class="col-md-6">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
-                            <p class="mb-4"tact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Reservation</a>.</p>
-                            <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da; padding: 10px;">
-                                            <p class="form-control-static" id="user_name">Your Name</p>
+                                            <p class="form-control-static user_name"  id="user_name">{{username}}</p>
+
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da; padding: 10px;">
-                                            <p class="form-control-static" id="friendtal">Friendtal</p>
+                                            <p class="form-control-static friendtal" id="friendtal">{{friendtal}}</p>
                                         </div>
                                     </div>
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da; padding: 10px;">
-                                                <p class="form-control-static" id="date">Date</p>
+                                                <p class="form-control-static date" id="date">{{date}}</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da; padding: 10px;">
-                                                <p class="form-control-static" id="your_email">Your Email</p>
+                                                <p class="form-control-static your_email" id="your_email">{{your_email}}</p>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da; padding: 10px;">
-                                                <p class="form-control-static" id="plan">Plan</p>
+                                                <p class="form-control-static plan" id="plan">{{plan}}</p>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da; padding: 10px;">
-                                                <p class="form-control-static" id="payment">Payment</p>
+                                                <p class="form-control-static payment" id="payment">{{payment}}</p>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da; padding: 10px;">
-                                                <p class="form-control-static" id="price">Price</p>
+                                                <p class="form-control-static price" id="price">{{price}}</p>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating border rounded" style="background-color: #f8f9fa; border-color: #ced4da;   padding: 10px;">
-                                                <p class="form-control-static" id="detail">Detail</p>
+                                                <p class="form-control-static detail" id="detail">{{detail}}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+
                             
                             
                         </div>
@@ -245,6 +244,10 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/link.js"></script>
+    <script src="js/confirmclass.js"></script>
+    <script src="js/displayConfirm.js"></script>
+    <script src="่js/displayData.js"></script>
+
 
 </body>
 
