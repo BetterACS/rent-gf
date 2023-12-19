@@ -1,6 +1,8 @@
 const mysql = require("mysql2");
 const dotenv = require("dotenv");
 const mongoose = require('mongoose');
+
+mongoose.Promise = global.Promise;
 dotenv.config();
 
 const dbConnection = mysql.createConnection({   

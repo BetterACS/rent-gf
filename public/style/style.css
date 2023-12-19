@@ -573,3 +573,22 @@ table {
     align-items: center;
     justify-self: center;
 }
+
+/* Add this to your CSS file */
+.review-item {
+    display: none;
+}
+
+.review-item.fadeIn {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
