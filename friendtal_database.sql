@@ -26,8 +26,9 @@ create table Fee_terms(
 );
 
 create table Friendtal(
-	location_id int auto_increment,
-	friendtal_Name varchar(255) not null primary key,
+	friendtal_id int not null auto_increment primary key,
+	location_id int,
+	friendtal_Name varchar(255) not null unique,
 	age int(100) not null,
 	blood_type varchar(2),
 	personality varchar(255),
