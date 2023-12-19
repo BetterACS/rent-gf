@@ -1,6 +1,8 @@
 const mysql = require("mysql2");
 const dotenv = require("dotenv");
 const mongoose = require('mongoose');
+
+mongoose.Promise = global.Promise;
 dotenv.config();
 
 const dbConnection = mysql.createConnection({   
@@ -23,13 +25,6 @@ dbConnection.connect((err) => {
     }
 });
 
-const query = 'SELECT * FROM User';
-dbConnection.query(query, (err, results) => {
-    if (err) {
-        console.error(err);
-    }
-    console.log(results);
-});
 
 module.exports = dbConnection;
 
