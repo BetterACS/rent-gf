@@ -46,9 +46,9 @@ create table Summary(
     Fee_terms_ID  int(2),
     friendtal_Name varchar(255),
     username varchar(255),
+	email varchar(255),
     Date date not null,
     detail varchar(255) not null,
-    amount int not null,
     payment_type varchar(255),
     foreign key (Fee_terms_ID) references Fee_terms(Fee_terms_ID)
 );
@@ -58,14 +58,8 @@ values ('monshun@gmail.com' , 'Jaijai' ,'jai12345' ,0894285541 ,'Male' ,20);
 
 
 
-<<<<<<< HEAD
-insert into Friendtal(location_id,Name,age,blood_type,personality,gender,bust,waist,hip,height,weight,picture)
-values 
-	(24, 'อ้วนเทสกีดีกว้่่า' , 20 , '','เท่ อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg')
-=======
 insert into Friendtal(location_id,friendtal_Name,age,blood_type,personality,gender,bust,waist,hip,height,weight,picture)
-values (24, 'อ้วน' , 20 , '','เท่ อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg')
->>>>>>> fea5b1fb798c8f0576eabc5ff1a40f9239cd4780
+values (24, 'อ้วน' , 20 , 'O','เท่ อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg')
                 ;
 
 insert into Location(province,district)

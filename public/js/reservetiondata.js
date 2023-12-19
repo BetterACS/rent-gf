@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var comlink = document.getElementById('comlink');
+    var comlink = document.getElementById('send');
 
     comlink.addEventListener('click', function (event) {
         event.preventDefault();
@@ -7,25 +7,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-const regForm = document.forms["reservation"];
+const reForm = document.forms["reservation"];
 
-regForm.addEventListener("submit", function(event) {
+reForm.addEventListener("submit", function(event) {
     event.preventDefault();
 
     const formData = new FormData();
 
-    formData.append("username", regForm.username.value);
-    formData.append("friendtal", regForm.friendtal.value);
-    formData.append("email", regForm.email.value);
-    formData.append("Date", regForm.date.value);
-    formData.append("payment_type", regForm.payment_type.value);
-    formData.append("plan", regForm.plan.value);
-    formData.append("detail", regForm.detail.value);
-    regHandle(formData);
-    regForm.reset();
+    formData.append("username", reForm.username.value);
+    formData.append("friendtal", reForm.friendtal.value);
+    formData.append("email", reForm.email.value);
+    formData.append("Date", reForm.date.value);
+    formData.append("payment_type", reForm.payment.value);
+    formData.append("plan", document.getElementById("planSelect").value);
+    formData.append("detail", reForm.detail.value);
+
+    reHandle(formData);
+    reForm.reset();
 });
 
-function regHandle(formData) {
+function reHandle(formData) {
     fetch("/reservation", {
         method: "POST",  // Corrected the HTTP method to "POST"
         body: formData,

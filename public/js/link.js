@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     dslink.addEventListener('click', function (event) {
         event.preventDefault();
-        window.location.href = 'http://localhost:3000/resrvation';
+        window.location.href = 'http://localhost:3000/reservation';
     });
 });
 
@@ -210,15 +210,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    var  cflink= document.getElementById('cflink');
-
-    cflink.addEventListener('click', function (event) {
-        event.preventDefault();
-        window.location.href = 'http://localhost:3000/confirm';
-    });
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     var  rplink= document.getElementById('rplink');
