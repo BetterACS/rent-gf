@@ -54,8 +54,6 @@ create table Summary(
     foreign key (Fee_terms_ID) references Fee_terms(Fee_terms_ID)
 );
 
-insert into User(email ,username , passwords , tel ,gender ,age)
-values ('monshun@gmail.com' , 'Jaijai' ,'jai12345' ,0894285541 ,'Male' ,20);
 
 
 insert into Friendtal(location_id,friendtal_Name,age,blood_type,personality,gender,bust,waist,hip,height,weight,picture)
@@ -66,8 +64,8 @@ values (24, 'อ้วน' , 20 , 'O','เท่ อบอุ่น', 'Male' , '
 		(4, 'Ploy' , 23 , 'B','ใจกว้าง', 'Female' , '33.07','25.98','35.43', 180 , 70 ,'https://i.imgur.com/eTQ86kw.jpg'),
 		(5, 'Guy' , 24 , 'O','หล่อเท่', 'Male' , '-','-','-', 130 , 65 ,'https://i.imgur.com/0TmQxMZ.jpg');
 
-select * from Friendtal;
-drop table Friendtal;
+select * from User;
+drop table User;
 
 insert into Location(province,district)
 value 
