@@ -33,9 +33,9 @@ create table Friendtal(
 	blood_type varchar(2),
 	personality varchar(255),
 	gender varchar(10),
-	bust varchar(3) ,
-	waist varchar(3) ,
-	hip varchar(3) ,
+	bust varchar(5) ,
+	waist varchar(5) ,
+	hip varchar(5) ,
 	height int(3) not null,
 	weight int(3) not null,
 	picture varchar(255),
@@ -58,15 +58,16 @@ insert into User(email ,username , passwords , tel ,gender ,age)
 values ('monshun@gmail.com' , 'Jaijai' ,'jai12345' ,0894285541 ,'Male' ,20);
 
 
-
 insert into Friendtal(location_id,friendtal_Name,age,blood_type,personality,gender,bust,waist,hip,height,weight,picture)
-values (24, 'อ้วน' , 20 , 'O','เท่ อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg'),
-		(1, 'อ้วน' , 20 , 'O','อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg'), 
-		(2, 'ไจ๋' , 21 , 'A','เท่', 'Male' , '-','-','-', 170 , 55 ,'https://i.imgur.com/Eka2NQz.jpeg'),
-		(3, 'คิม' , 22 , 'AB','ใจดี', 'Female' , '-','-','-', 165 , 45 ,'https://i.imgur.com/A5m8YRk.jpeg'),
-		(4, 'แบงค์' , 23 , 'B','ใจกว้าง', 'Male' , '-','-','-', 180 , 70 ,'https://i.imgur.com/eTQ86kw.jpeg'),
-		(5, 'กาย' , 24 , 'O','รักสุดหัวใจ', 'Female' , '-','-','-', 130 , 65 ,'https://i.imgur.com/zB4hvHf.jpeg');
-    
+values (24, 'อ้วน' , 20 , 'O','เท่ อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpeg'),
+		(1, 'Jack' , 20 , 'O','อบอุ่น', 'Male' , '38.58','30.71','37.80', 175 , 60 ,'https://i.imgur.com/d0Fj3Kg.jpg'), 
+		(2, 'ฟิว' , 21 , 'A','เท่', 'Male' , '40.16','32.28','39.37', 170 , 55 ,'https://i.imgur.com/NJcVxAu.jpg'),
+		(3, 'Ice' , 22 , 'AB','ใจดี', 'Female' , '35','28','30', 165 , 45 ,'https://i.imgur.com/zB4hvHf.jpg'),
+		(4, 'Ploy' , 23 , 'B','ใจกว้าง', 'Female' , '33.07','25.98','35.43', 180 , 70 ,'https://i.imgur.com/eTQ86kw.jpg'),
+		(5, 'Guy' , 24 , 'O','หล่อเท่', 'Male' , '-','-','-', 130 , 65 ,'https://i.imgur.com/0TmQxMZ.jpg');
+
+select * from Friendtal;
+drop table Friendtal;
 
 insert into Location(province,district)
 value 
@@ -87,10 +88,3 @@ value
                 ('Extension 1 hr.' , ' 600 '),('plan A(amusement park)' , ' 4200 '),('plan B(aquarium)' , ' 5500 '),
                 ('plan C(activity)' , ' 5000 ');
 
-insert into Friendtal(location_id,Name,age,blood_type,personality,gender,bust,waist,hip,height,weight,picture)
-values 
-    (1, 'อ้วน' , 20 , 'O','อบอุ่น', 'Male' , '-','-','-', 175 , 60 ,'https://i.imgur.com/Pi61kiE.jpg'), 
-    (2, 'ไจ๋' , 21 , 'A','เท่', 'Male' , '-','-','-', 170 , 55 ,'https://i.imgur.com/Eka2NQz.jpeg'),
-    (3, 'คิม' , 22 , 'AB','ใจดี', 'Female' , '-','-','-', 165 , 45 ,'https://i.imgur.com/A5m8YRk.jpeg'),
-    (4, 'แบงค์' , 23 , 'B','ใจกว้าง', 'Male' , '-','-','-', 180 , 70 ,'https://i.imgur.com/eTQ86kw.jpeg'),
-    (5, 'กาย' , 24 , 'O','รักสุดหัวใจ', 'Female' , '-','-','-', 130 , 65 ,'https://i.imgur.com/zB4hvHf.jpeg');
