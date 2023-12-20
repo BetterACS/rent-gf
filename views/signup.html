@@ -12,30 +12,30 @@
         <h1 class="head">FRIENDTAL</h1>
         <form class="suginup-form" name="register" >
              <label>Email</label>
-            <input name="email" type="email" placeholder="">
+            <input name="email" type="email" placeholder="" required>
             <label>Username</label>
-            <input name="username" type="text" placeholder="">
+            <input name="username" type="text" placeholder="" required>
             <label>Tel.</label>
-            <input name="tel" type="tel" placeholder="">
+            <input name="tel" type="tel" placeholder="" required>
             <label>Age</label>
-            <input name="age" type="text" placeholder="">
+            <input name="age" type="text" placeholder="" required>
             <div class="gender_">
                 <label>Gender</label>
-                <div>
-                    <input name="gender" type="radio" value="Male">
+                <div >
+                    <input name="gender" type="radio" value="Male" required>
                     <label class="gtab">Male</label>
-                    <input name="gender" type="radio" value="Female">
+                    <input name="gender" type="radio" value="Female" required>
                     <label class="gtab">Female</label>
                     <div>
-                        <input name="gender" type="radio"  value="LGBTQIA+">
+                        <input name="gender" type="radio"  value="LGBTQIA+" required>
                         <label class="gtab">LGBTQIA+</label>
-                        <input name="gender" type="radio"   value="Secret ">
+                        <input name="gender" type="radio"   value="Secret" required>
                         <label class="gtab">Secret</label>
                     </div>
                 </div>
             </div>
             <label>Password</label>
-            <input name="password" type="password" placeholder="">
+            <input name="password" type="password" placeholder="" required>
             <button>Sign up</button>
         </form>
     </div>
