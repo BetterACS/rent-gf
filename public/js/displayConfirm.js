@@ -35,7 +35,14 @@ function displaySummary(ConfirmInfo) {
     if (document.querySelector('.date')) {
         const dateElements = document.querySelectorAll('.date');
         dateElements.forEach(function(dateElement) {
-            dateElement.textContent = 'Date: ' + confirmInfo.date;
+            // Format the date as "dd-mm-yyyy"
+            const dateObject = new Date(confirmInfo.date);
+            const day = String(dateObject.getDate()).padStart(2, '0');
+            const month = String(dateObject.getMonth() + 1).padStart(2, '0');
+            const year = dateObject.getFullYear();
+
+            const formattedDate = `${day}-${month}-${year}`;
+            dateElement.textContent = 'Date: ' + formattedDate;
         });
     }
 
